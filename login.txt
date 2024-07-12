@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESKISEHIR TECHNICAL UNIVERSITY </title>
+    <style>
+         body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4d1717;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: #671a1a; 
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+    min-width: 200px;
+}
+
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+.contact-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.contact-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+        footer {
+            background-color: #4d1717;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        aside nav ul li a:hover {
+            text-decoration: underline;
+        }
+        aside nav ul li .sub-menu {
+            display: none;
+        }
+
+        aside nav ul li:hover .sub-menu {
+            display: block;
+        }
+
+        aside nav ul li ul li a {
+            font-size: 15px;
+        }
+        .login-form {
+        width: 300px;
+        margin: 50px auto 0;
+        text-align: center;
+        position: absolute;
+        top: 20%;
+        left: 42%;
+        }
+
+        .login-form h2 {
+            font-size: 30px; 
+            margin-bottom: 20px; 
+                color: #4d1717;
+}
+
+.login-form label {
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    color: #333; 
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+.login-form input[type="submit"] {
+    width: auto; 
+    padding: 10px ; 
+    font-size: 14px; 
+
+ 
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>ESKISEHIR TECHNICAL UNIVERSITY </h1>
+        <div class="contact-info">
+            <span>Phone: +90 123 456 78 90</span>
+            <span>Email: info@eskisehir.edu.tr</span>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="university.html">University</a></li>
+                    <li><a href="academics.html" >Academics</a></li>
+                    <li><a href="#" class="active">Students</a>
+                        <ul class="sub-menu">
+                            <li><a href="login.html">Student Login</a></li>
+                            <li><a href="documents.html">Documents</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="campuslife.html">Campus Life</a></li>
+                </ul>
+            </nav>
+        </aside>
+    </main>
+    <div class="login-form">
+        <h2>Login</h2>
+        <form action="home.html" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="password" required><br>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; Copyright &copy; 2024 Eskisehir Technical University. All rights reserved.</p>
+    </footer>
+</body>
+</html>

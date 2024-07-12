@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESKISEHIR TECHNICAL UNIVERSITY </title>
+    <style>
+         body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #4d1717;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+aside {
+    background-color: #671a1a; 
+    color: #000000;
+    padding: 30px;
+    text-align: center;
+    width: 5%;
+    min-width: 200px;
+}
+aside {
+    float: left;
+    width: 10%;
+}
+aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px 0;
+}
+
+nav ul li {
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+}
+
+footer {
+    background-color: #4d1717;
+    color: #fff;
+    text-align: center;
+    padding: 2px;
+}
+
+
+.contact-info {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+.contact-info span {
+    display: block;
+    margin-bottom: 5px;
+}
+        footer {
+            background-color: #4d1717;
+            color: #fff;
+            text-align: center;
+            padding: 2px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .video-container {
+        margin-bottom: 10px;
+        text-align: center;
+        position: absolute;
+        top: 15%;
+        left: 8cm;
+        right: 50%;
+}
+.active {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>ESKISEHIR TECHNICAL UNIVERSITY </h1>
+    <div class="contact-info">
+        <span>Phone: +90 123 456 78 90</span>
+        <span>Email: info@eskisehir.edu.tr</span>
+    </div>
+</header>
+
+<main>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="university.html">University</a></li>
+                <li><a href="academics.html" >Academics</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="campuslife.html"class="active">Campus Life</a></li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<section class="video-container">
+    <!-- YouTube video oynatıcı -->
+    <iframe width="1200" height="550" src="https://www.youtube.com/embed/eLQQmroQrZM" frameborder="0" ></iframe>
+</section>
+
+<footer>
+    <p>&copy; Copyright &copy; 2024 Eskisehir Technical University. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
